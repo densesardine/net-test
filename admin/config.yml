@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: main
+  cms_label_prefix: posts/
 publish_mode: editorial_workflow
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
@@ -17,4 +18,17 @@ collections:
         widget: "select"
         multiple: true
         options: ["a","b","c", "a b c"]
+  - name: "pages"
+    label: "pages"
+    files: 
+      - name: "products"
+        label: "products"
+        file: "_data/products.yml"
+        fields:
+          - label: "products"
+            name: "products"
+            widget: "list"
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: info, name: stuff, widget: string}
 media_folder: "/uploads"

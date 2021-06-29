@@ -16,3 +16,9 @@ You can find the source code for Jekyll at GitHub:
 
 
 [jekyll-organization]: https://github.com/jekyll
+
+{{ site.data.about }}
+
+{%- for prod in site.data.products -%}
+ {{ prod.name }} - {{ prod.stuff}}
+{%- endfor -%}
