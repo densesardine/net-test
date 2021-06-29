@@ -19,6 +19,6 @@ You can find the source code for Jekyll at GitHub:
 
 {{ site.data.about }}
 
-{%- for prod in site.data.products -%}
+{%- for prod in site.data.products.products -%}
  {{ prod.name }} - {{ prod.stuff}}
 {%- endfor -%}
