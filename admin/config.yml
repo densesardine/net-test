@@ -17,3 +17,4 @@ collections:
         widget: "select"
         multiple: true
         options: ["a","b","c", "a b c"]
+media_folder: "/uploads"
