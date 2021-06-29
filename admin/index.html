@@ -10,14 +10,15 @@
   <!-- Include the script that builds the page and powers Netlify CMS -->
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
   <script>
-    window.addEventListener('DOMContentLoaded', (event) => {
+setTimeout(() => {
     // console.log('DOM fully loaded and parsed');
     let div = document.createElement("div");
     div.classList.add("css-1hvrgvd-CollectionTopContainer-card-cardTop")
     div.classList.add("enajvhy0")
     div.innerHTML = '<div class="css-q8mdjk-CollectionTopRow enajvhy1"><h2 class="css-1mtos59-ListCardTitle eab48an5">asdfasdasdfasdfasdasfad</h2></div>';
     document.querySelector("main").insertBefore(div,document.querySelector("main > :first-child"));
-});
+
+}, 3000);
   </script>
 </body>
 </html>
